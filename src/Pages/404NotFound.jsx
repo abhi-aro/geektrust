@@ -1,4 +1,5 @@
 import React from "react";
+import Empty from "../features/empty/Empty";
 import Footer from "../features/footer/Footer";
 import Header from "../features/header/Header";
 
@@ -6,7 +7,7 @@ const NoPage = () => {
 	return (
 		<div>
 			<Header />
-			404 not found
+			<Empty />
 			<Footer />
 		</div>
 	);
