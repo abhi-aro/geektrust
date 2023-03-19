@@ -1,7 +1,4 @@
-:root {
-	--star1-speed: 50s;
-	--star2-speed: 100s;
-}
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
 
 *,
 ::after,
@@ -12,14 +9,9 @@
 
 body {
 	margin: 0;
-	height: 100vh;
-	width: 100vw;
 
-	overflow: hidden;
-	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+	font-family: "Gaegu", cursive, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
