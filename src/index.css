@@ -1,11 +1,23 @@
+:root {
+	--star1-speed: 50s;
+	--star2-speed: 100s;
+}
+
 *,
 ::after,
 ::before {
 	box-sizing: border-box;
+	color: white;
 }
 
 body {
 	margin: 0;
+	height: 100vh;
+	width: 100vw;
+
+	overflow: hidden;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
 		"Helvetica Neue", sans-serif;
@@ -13,7 +25,30 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+.star {
+	position: absolute;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white;
+	animation: blink linear infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes blink {
+		0% {
+			opacity: 0;
+		}
+		10% {
+			opacity: 0.5;
+		}
+		50% {
+			opacity: 1;
+		}
+		90% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
 }
